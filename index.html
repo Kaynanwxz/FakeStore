@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <title>Loja fake</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">HOME</a>
+      <div>
+        <input type="text" name="" id="input" />
+        <button onclick="search()" type="button">procurar</button>
+      </div>
+      <div style="width: 104px"></div>
+    </header>
+    <main>
+      <div class="ordem">
+        <legend>Ordem:</legend>
+        <div id="alfabetica">
+          <input
+            onclick="ordenar('alfabetic')"
+            id="alfabetic"
+            type="radio"
+            value="alfabetica"
+            name="ordem"
+            checked
+          />
+          <label for="">Alfabetica</label>
+        </div>
+        <div id="preço">
+          <input
+            onclick="ordenar('price')"
+            id="ordem"
+            type="radio"
+            value="preço"
+            name="ordem"
+          />
+          <label for="">Preço</label>
+        </div>
+        <div id="categoria">
+          <input
+            onclick="ordenar('category')"
+            id="ordem"
+            type="radio"
+            value="categoria"
+            name="ordem"
+          />
+          <label for="">Categoria</label>
+        </div>
+      </div>
+
+      <ul class="units"></ul>
+    </main>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

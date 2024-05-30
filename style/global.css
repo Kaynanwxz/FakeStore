@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  height: 120px;
+  width: 100%;
+
+  background-color: #005cc8;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  a {
+    margin-left: 40px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  input {
+    height: 30px;
+    width: 250px;
+
+    padding-left: 10px;
+    border-radius: 100px;
+
+    transition: none;
+    animation: none;
+    border: none;
+  }
+  input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+  }
+  button {
+    height: 30px;
+    width: 75px;
+    border-radius: 50px;
+
+    background-color: white;
+
+    border: none;
+  }
+}
